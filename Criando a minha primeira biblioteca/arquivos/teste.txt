@@ -1,0 +1,8 @@
+arara
+teste teste arara
+abc abc 
+ola olá oi oi oi
+uai uai uau
+Aqui é um teste em que eu posso verificar se as palavras deste parágrafo serão repetidas. Eu preciso adicionar o máximo possível de informações, para que o sistema possa considerar a contagem correta.
+
+Pedro Paulo Pereira Pinto pequeno pintor português pintava portas paredes portais, porém pediu para parar porque preferiu pintar panfletos. Partindo para Piracicaba, pernoitou por períodos permanentes. Padre Pafúncio pediu para proceder pintando por perto.

@@ -1,28 +1,7 @@
 // const { log } = require('console')
-const fs = require('fs') // o fs é uma biblioteca que serve para o node interagir com o sistema de arquivos do sistema operacional do computador
-
-const trataErros = require('./erros/funcoesErro')
-
-// o process.argv permite criar um array de strings, onde cada posição deste array se refere a uma instrução passada pelo terminal, separadas por espaço
-
-const caminhoArquivo = process.argv
-const link = caminhoArquivo[2]
-
-// console.log(caminhoArquivo, link)
-
-
-// utf-8 é o encoding que é o sistema de encodamento para os caracteres do idioma de origem latina
-fs.readFile(link, 'utf-8', (erro, texto) => {
-    try {
-        if (erro) throw erro // throw vai "lançar" o erro pra frente
-        contaPalavras(texto)
-    } catch (erro) { // IMPORTANTE SABER: este erro do catch não é o mesmo erro do throw
-        trataErros(erro)
-    }
-})
 
 // função principal da aplicação
-function contaPalavras(texto) {
+export function contaPalavras(texto) {
     const paragrafos = extraiParagrafos(texto)
     // como o filter retorna um resultado booleano, se o 'paragrafo' for vazio, o JavaScript interpreta como Falsy e não vai mapear este elemento
     // const arrayDeObjetosDePalavras = paragrafos.filter(paragrafo => paragrafo).map(paragrafo => {
@@ -49,8 +28,8 @@ function contaPalavras(texto) {
     // for (const paragrafo of result) {
     //     arrayDeObjetosDePalavras.push(verificaPalavrasDuplicadas(paragrafo))
     // }
-
-    console.log(arrayDeObjetosDePalavras)
+    
+    return arrayDeObjetosDePalavras
 }
 
 function extraiParagrafos(texto) {

@@ -1,0 +1,5 @@
+Palavras duplicadas no parágrafo 2: teste
+Palavras duplicadas no parágrafo 3: abc
+Palavras duplicadas no parágrafo 5: uai
+Palavras duplicadas no parágrafo 6: que
+Palavras duplicadas no parágrafo 8: pediu, para, por

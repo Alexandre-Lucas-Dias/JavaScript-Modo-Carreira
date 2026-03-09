@@ -1,0 +1,29 @@
+
+# Online Python - IDE, Editor, Compiler, Interpreter
+
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.optimize import curve_fit
+
+# Dados fornecidos
+x_data = np.array([2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 5, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 6])
+y_data = np.array([42, 22, 15.33, 12, 10, 8.67, 7.71, 7, 6.44, 6, 5.64, 5.33, 5.08, 4.86, 4.67, 4.5, 4.35, 4.22, 4.11, 4, 3.9, 3.82, 3.74, 3.67, 3.6, 3.54, 3.48, 3.43, 3.38, 3.33, 3.29, 3.25, 3.21, 3.18, 3.14, 3.11, 3.08, 3.05, 3.03, 3])
+
+# Definição da função exponencial
+def model(x, A, B):
+    return A * np.exp(-B * x)
+
+# Ajuste da curva
+popt, _ = curve_fit(model, x_data, y_data)
+
+# Parâmetros ajustados
+A_fit, B_fit = popt
+print(f"Valores ajustados: A = {A_fit:.2f}, B = {B_fit:.2f}")
+
+# Plotando os resultados
+plt.scatter(x_data, y_data, label="Dados Originais")
+plt.plot(x_data, model(x_data, *popt), color="red", label="Ajuste Exponencial")
+plt.legend()
+plt.show()
+
+executar no terminal: python ajuste_exponencial.py
