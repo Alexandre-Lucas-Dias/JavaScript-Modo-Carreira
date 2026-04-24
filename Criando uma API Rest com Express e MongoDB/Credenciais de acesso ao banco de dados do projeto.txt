@@ -1,0 +1,4 @@
+Credenciais de acesso ao banco de dados do projeto:
+
+Usuário: alexandrelucasdiascosta_db_user
+Senha: alex.102025
