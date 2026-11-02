@@ -1,6 +1,5 @@
-import Header from './componentes/Header';
-import Pesquisa from './componentes/Pesquisa';
-import UltimosLancamentos from './componentes/UltimosLancamentos';
+import Pesquisa from '../componentes/Pesquisa';
+import UltimosLancamentos from '../componentes/UltimosLancamentos';
 import styled from 'styled-components';
 
 const AppContainer = styled.div`
@@ -13,14 +12,13 @@ const AppContainer = styled.div`
 // 'alt' geralmente é utilizado para acessibilidade, mas o VS reclama se esta tag não estiver presente em uma <img>
 // 'ul' significa lista não ordenada (unordened list)
 
-function App() {
+function Home() {
   return (
     <AppContainer>
-      <Header />
       <Pesquisa />
       <UltimosLancamentos />
     </AppContainer>
   );
 }
 
-export default App;
+export default Home;
