@@ -1,1 +1,34 @@
-[{"id":"1","nome":"Livro top"},{"id":"3","nome":"Livro massa"},{"id":"4","nome":"Livro legal"},{"id":"2","nome":"Livro supimpa"},{"id":"5","nome":"Livro ótimo"},{"id":"6","nome":"Livro irado"},{"nome":"Livro bom","id":"7"},{"nome":"livro lindo","id":"86"}]
+[
+    {
+        "id": "4",
+        "nome": "Entendendo algoritmos"
+    },
+    {
+        "id": "5",
+        "nome": "Cangaceiro Javascript"
+    },
+    {
+        "id": "7",
+        "nome": "Guia básico de C#"
+    },
+    {
+        "id": "8",
+        "nome": "Guia básico de JavaScript"
+    },
+    {
+        "id": "9",
+        "nome": "Código Limpo"
+    },
+    {
+        "id": "10",
+        "nome": "JavaScript para iniciantes"
+    },
+    {
+        "id": "11",
+        "nome": "Conhecendo o python"
+    },
+    {
+        "id": "12",
+        "nome": "Imersão Alura"
+    }
+]

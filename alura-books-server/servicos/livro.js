@@ -33,9 +33,9 @@ function modificaLivro(modificacoes, id) {
 function excluiLivro(id) {
     const livros = JSON.parse(fs.readFileSync("livros.json"));
     const indiceParaExclusao = livros.findIndex(livro => livro.id === id);
-    
+
     livros.splice(indiceParaExclusao, 1); // esta ação remove o item da lista de acordo com o índice. O número 1 é a quantidade removida
-    
+
     fs.writeFileSync("livros.json", JSON.stringify(livros));
 
     // versão do professor da Alura
